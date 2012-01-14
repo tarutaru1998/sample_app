@@ -12,6 +12,10 @@ SampleApp::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
+	match '/contact', :to => 'pages#contact'
+	match '/about',   :to => 'pages#about'
+	match '/help',    :to => 'pages#help'
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
